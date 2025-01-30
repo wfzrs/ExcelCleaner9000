@@ -1,3 +1,6 @@
 .venv/
 in-files/*
 out-files/*
+build/
+dist/
+*.spec
