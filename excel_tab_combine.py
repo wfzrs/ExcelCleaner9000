@@ -37,9 +37,6 @@ def add_random_code(input_file, output_file):
     print(f"Updated file saved as: {output_file}")
 
 
-add_random_code("./Master_Excel_cleaned.xlsx", "Master_Excel_codes.xlsx")
-exit()
-
 # Path to the Excel file
 file_path = "./your_excel_file.xlsx"
 
