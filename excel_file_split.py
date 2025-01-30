@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 
 def split_excel_file(input_file, column_name):
@@ -15,6 +16,17 @@ def split_excel_file(input_file, column_name):
         output_file = f"./out-files/{value}.xlsx"
         subset_df.to_excel(output_file, index=False)
         #print(f"Created file: {output_file}")
+
+# First check if dir 'out-files' exists and create it if it doesn't.
+directory = "out-files"
+
+# Check if directory exists
+if not os.path.exists(directory):
+    # Create the directory
+    os.makedirs(directory)
+    print(f"Directory '{directory}' created.")
+else:
+    print(f"Directory '{directory}' already exists.")
 
 # Example usage
 input_file = './2025-fit-for-fun-student-list.xlsx'
