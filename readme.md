@@ -1,4 +1,4 @@
-# README: Combine Multiple Excel Spreadsheet Sheets into One
+# Combine Multiple Excel Spreadsheet Sheets into One
 
 This Python script allows you to combine data from multiple sheets in an Excel file into one consolidated sheet. Each sheet must have the same structure, and the script ensures that duplicate header rows are removed in the final output.
 
