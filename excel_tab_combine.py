@@ -38,7 +38,7 @@ def add_random_code(input_file, output_file):
 
 
 # Path to the Excel file
-file_path = "./your_excel_file.xlsx"
+file_path = "in-files/tabbed_file.xlsx"
 
 # Read all sheets into a dictionary of DataFrames
 all_sheets = pd.read_excel(file_path, sheet_name=None, header=None)
@@ -63,7 +63,7 @@ combined_data = pd.concat(cleaned_dataframes, ignore_index=True)
 #combined_data.columns = ["Last Name", "First Name", "Teacher", "School Name", "Codes"]
 
 # Save the combined data to a new Excel file
-output_file = "Master_Excel_cleaned.xlsx"
+output_file = "out-files/tabs_combined.xlsx"
 combined_data.to_excel(output_file, index=False)
 
 print(f"Cleaned combined data saved to {output_file}")
